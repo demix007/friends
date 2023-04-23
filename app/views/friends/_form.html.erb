@@ -11,32 +11,29 @@
     </div>
   <% end %>
 
-  <div>
-    <%= form.label :first_name, style: "display: block" %>
-    <%= form.text_field :first_name %>
+  <div class = 'field form-group'>
+    <br>
+    <%= form.text_field :first_name, class: 'form-control', placeholder: 'First Name' %>
+  </div>
+  <br>
+  <div class = 'field form-group'>
+    <%= form.text_field :last_name, class: 'form-control', placeholder: 'Last Name' %>
+  </div>
+  <br>
+  <div class = 'field form-group'>
+    <%= form.text_field :email, class: 'form-control', placeholder: 'Email' %>
+  </div>
+  <br>
+  <div class = 'field form-group'>
+    <%= form.text_field :phone, class: 'form-control', placeholder: 'Phone Number' %>
+  </div>
+  <br>
+  <div class = 'field form-group'>
+    <%= form.text_field :twitter, class: 'form-control', placeholder: 'Twitter Handle' %>
   </div>
 
+  <br>
   <div>
-    <%= form.label :last_name, style: "display: block" %>
-    <%= form.text_field :last_name %>
-  </div>
-
-  <div>
-    <%= form.label :email, style: "display: block" %>
-    <%= form.text_field :email %>
-  </div>
-
-  <div>
-    <%= form.label :phone, style: "display: block" %>
-    <%= form.text_field :phone %>
-  </div>
-
-  <div>
-    <%= form.label :twitter, style: "display: block" %>
-    <%= form.text_field :twitter %>
-  </div>
-
-  <div>
-    <%= form.submit %>
+    <%= form.submit class: 'btn btn-success' %>
   </div>
 <% end %>
